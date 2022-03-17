@@ -28,3 +28,4 @@ chmod -R 777 storage bootstrap/cache
 
 
 npm install -D vue@2# laravel_spa
+# test
