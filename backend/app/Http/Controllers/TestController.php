@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * Create a new controllbber instance.
      *
      * @return void
      */
