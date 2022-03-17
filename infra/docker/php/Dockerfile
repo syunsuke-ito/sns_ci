@@ -1,7 +1,6 @@
 #buster  コンテナos
 #fpm  アプリケーションサーバー、cgi
 FROM php:7.4.27-fpm-buster
-LABEL maintainer="ucan-lab <yes@u-can.pro>"
 SHELL ["/bin/bash", "-oeux", "pipefail", "-c"]
 
 # timezone environment

@@ -39,11 +39,11 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    // ★ メソッド追加
     protected function authenticated(Request $request, $user)
     {
         return $user;
     }
+
     protected function loggedOut(Request $request)
     {
         // セッションを再生成する
@@ -51,5 +51,4 @@ class LoginController extends Controller
 
         return response()->json();
     }
-
 }

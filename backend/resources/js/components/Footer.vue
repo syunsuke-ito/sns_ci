@@ -1,10 +1,8 @@
 <template>
-    <footer class="footer">
-            <b-button size="lg" variant="outline-primary">
-      Bootstrap Button
-    </b-button>
-    <b-button size="lg" variant="danger">
-      Bootstrap Button
-    </b-button>
-    </footer>
+  <footer class="footer">
+    <button class="button button--link">Logout</button>
+    <RouterLink class="button button--link" to="/login">
+      Login / Register
+    </RouterLink>
+  </footer>
 </template>
