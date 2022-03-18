@@ -1,35 +1,33 @@
 <template>
 <v-app>
-  <v-navigation-drawer app>
-    <!-- -->
-  </v-navigation-drawer>
+    <v-navigation-drawer app>
+        <!-- -->
+    </v-navigation-drawer>
 
 
     <Navbar />
-  <!-- アプリケーションのコンポーネントに基づいてコンテンツのサイズを決定 -->
-  <v-main>
+    <!-- アプリケーションのコンポーネントに基づいてコンテンツのサイズを決定 -->
+    <v-main>
 
-    <!-- アプリケーションに適切なgutterを提供 -->
-    <v-container fluid>
+        <!-- アプリケーションに適切なgutterを提供 -->
+        <v-container fluid>
 
-      <!-- vue-routerを使用する場合 -->
-      <router-view></router-view>
-    </v-container>
-  </v-main>
+        <!-- vue-routerを使用する場合 -->
+        <router-view></router-view>
+        </v-container>
+    </v-main>
 
-  <v-footer app>
-    <!-- -->
-  </v-footer>
+    <v-footer app>
+        <!-- -->
+    </v-footer>
 </v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
 export default {
-  components: {
-    Navbar,
-    Footer
-  }
+    components: {
+        Navbar,
+    }
 }
 </script>

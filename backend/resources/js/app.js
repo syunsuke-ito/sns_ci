@@ -25,17 +25,17 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
- import Vue from 'vue'
- import router from './router'
- import store from './store'
- import App from './App.vue'
- import Vuetify from './plugins/vuetify'
+import Vue from 'vue'
+import router from './router'
+import store from './store'
+import App from './App.vue'
+import Vuetify from './plugins/vuetify'
 
- new Vue({
-   el: '#app',
-   router,
-   store,
-   vuetify: Vuetify,
-   components: { App },
-   template: '<App />'
- })
+new Vue({
+    el: '#app',
+    router,
+    store,
+    vuetify: Vuetify,
+    components: { App },
+    template: '<App />'
+})
