@@ -11,8 +11,7 @@ jobs:
       - run: composer install -n --prefer-dist --working-dir=./backend
       - save_cache:
           key: composer-v1-{{ checksum "backend/composer.lock" }}
-          paths:
-            - backend/vendor
+          paths: backend/vendor
       - run:
           command: npm ci
           working_directory: backend
