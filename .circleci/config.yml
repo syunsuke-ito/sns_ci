@@ -6,10 +6,9 @@ jobs:
     steps:
       - checkout
       - run: composer update --working-dir=./backend
-      - run: composer update --working-dir=./backend
       - run: composer install -n --prefer-dist --working-dir=./backend
-      - run: npm ci
-      - run: npm run dev
+      - run: npm ci  --cwd ./backend
+      - run: npm run dev  --cwd ./backend
       - run:
           name: php test test
-          command: vendor/bin/phpunit
+          command: ./backend/vendor/bin/phpunit --configuration=./backend/phpunit.xml
