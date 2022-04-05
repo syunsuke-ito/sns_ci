@@ -8,7 +8,6 @@ jobs:
       - run: pwd
       - run: ls
       - run: sudo composer self-update --1
-      - run: composer update --working-dir=./backend
       - run: composer install -n --prefer-dist --working-dir=./backend
       - run: npm ci
       - run: npm run dev
