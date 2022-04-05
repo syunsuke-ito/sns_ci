@@ -9,6 +9,8 @@ use App\Models\User;
 
 class RegisterApiTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * A basic feature test example.
      *
