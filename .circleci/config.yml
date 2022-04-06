@@ -42,6 +42,7 @@ jobs:
           command: npm run dev
           working_directory: backend
       - run:
+          working_directory: backend
           name: get ready for mysql
           command: |
             sudo apt-get update
