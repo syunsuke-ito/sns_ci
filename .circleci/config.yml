@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/php:7.4.26-node
-      - image: cimg/mysql:8.0.28
+      - image: circleci/mysql:8.0
         environment:
           MYSQL_DATABASE: laravel_local
           MYSQL_USER: phper
@@ -45,7 +45,7 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get install libpq-dev
-            sudo docker-php-ext-install intl pdo_mysql
+            sudo docker-php-ext-install pdo_mysql
             dockerize -wait tcp://127.0.0.1:3306 -timeout 1m
       - run:
           name: php test test
